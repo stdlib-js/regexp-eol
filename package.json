@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/regexp-eol",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Return a regular expression to match a newline character sequence.",
   "license": "Apache-2.0",
   "author": {
