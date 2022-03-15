@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/regexp-eol",
-  "version": "0.0.7",
+  "version": "0.0.0",
   "description": "Return a regular expression to match a newline character sequence.",
   "license": "Apache-2.0",
   "author": {
@@ -41,6 +41,7 @@
     "@stdlib/assert-is-boolean": "^0.0.x",
     "@stdlib/assert-is-plain-object": "^0.0.x",
     "@stdlib/assert-is-string": "^0.0.x",
+    "@stdlib/string-format": "^0.0.x",
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.0.x"
   },
   "devDependencies": {
