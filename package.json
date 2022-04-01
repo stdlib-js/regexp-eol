@@ -1,0 +1,35 @@
+{
+  "name": "@stdlib/regexp-eol",
+  "version": "0.0.0",
+  "description": "Return a regular expression to match a newline character sequence.",
+  "license": "Apache-2.0",
+  "main": "./bundle.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/regexp-eol.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "regex",
+    "regexp",
+    "re",
+    "eol",
+    "split",
+    "newline",
+    "linefeed",
+    "carriage return",
+    "line break",
+    "regular",
+    "expression",
+    "capture",
+    "match"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
