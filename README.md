@@ -53,7 +53,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.reEOL;
+})();
 })();
 </script>
 ```
@@ -141,6 +143,7 @@ var parts = reEOL.REGEXP_CAPTURE.exec( '\n' );
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/regexp-eol@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
+(function () {
 
 var RE_EOL = reEOL();
 var bool;
@@ -166,6 +169,7 @@ str = 'This is\na newline\r\ndelimited string.';
 var arr = str.split( RE_EOL );
 // returns [ 'This is', 'a newline', 'delimited string.' ]
 
+})();
 })();
 </script>
 </body>
