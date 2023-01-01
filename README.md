@@ -24,20 +24,30 @@ limitations under the License.
 
 > [Regular expression][mdn-regexp] to match a [newline][newline] character sequence.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/regexp-eol
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import reEOL from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-eol@deno/mod.js';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { REGEXP, REGEXP_CAPTURE } from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-eol@deno/mod.js';
+var reEOL = require( '@stdlib/regexp-eol' );
 ```
 
 #### reEOL( \[options] )
@@ -65,7 +75,7 @@ The function accepts an `options` object with optional properties:
 By default, the function returns a regular expression which does not have any flags specified. To specify [flags][mdn-regexp-flags], set the `flags` option with a list of flags (which may be in any order).
 
 ```javascript
-import replace from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-replace@deno/mod.js';
+var replace = require( '@stdlib/string-replace' );
 
 var RE_EOL = reEOL({
     'flags': 'g'
@@ -117,7 +127,7 @@ var parts = reEOL.REGEXP_CAPTURE.exec( '\n' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import reEOL from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-eol@deno/mod.js';
+var reEOL = require( '@stdlib/regexp-eol' );
 
 var RE_EOL = reEOL();
 var bool;
@@ -165,7 +175,7 @@ var arr = str.split( RE_EOL );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -182,7 +192,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
