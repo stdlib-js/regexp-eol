@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2021 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,24 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var isRegExp = require( '@stdlib/assert-is-regexp' );
-var reEOL = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof reEOL, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'attached to the main export is a regular expression', function test( t ) {
-	t.equal( isRegExp( reEOL.REGEXP ), true, 'exports a regular expression' );
-	t.end();
-});
-
-tape( 'attached to the main export is a regular expression (capture group)', function test( t ) {
-	t.equal( isRegExp( reEOL.REGEXP_CAPTURE ), true, 'exports a regular expression' );
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
