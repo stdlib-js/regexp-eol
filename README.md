@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import reEOL from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-eol@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/regexp-eol/tags). For example,
+
+```javascript
 import reEOL from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-eol@v0.2.3-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { REGEXP, REGEXP_CAPTURE } from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-eol@v0.2.3-deno/mod.js';
+import { REGEXP, REGEXP_CAPTURE } from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-eol@deno/mod.js';
 ```
 
 #### reEOL( \[options] )
@@ -128,7 +133,7 @@ var parts = reEOL.REGEXP_CAPTURE.exec( '\n' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import reEOL from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-eol@v0.2.3-deno/mod.js';
+import reEOL from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-eol@deno/mod.js';
 
 var RE_EOL = reEOL();
 var bool;
