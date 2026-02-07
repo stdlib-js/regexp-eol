@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import reEOL from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-eol@deno/mod.js';
+import reEOL from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-eol@v0.2.3-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { REGEXP, REGEXP_CAPTURE } from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-eol@deno/mod.js';
+import { REGEXP, REGEXP_CAPTURE } from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-eol@v0.2.3-deno/mod.js';
 ```
 
 #### reEOL( \[options] )
@@ -128,7 +128,7 @@ var parts = reEOL.REGEXP_CAPTURE.exec( '\n' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import reEOL from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-eol@deno/mod.js';
+import reEOL from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-eol@v0.2.3-deno/mod.js';
 
 var RE_EOL = reEOL();
 var bool;
